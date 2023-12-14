@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from api.categories.models import Category
+from api.users.models import User
 from .models import Expense
 
 class ExpenseSerializer(serializers.ModelSerializer):
@@ -16,3 +17,11 @@ class ExpenseSerializer(serializers.ModelSerializer):
         if Category.objects.filter(id=value.id).exists():
             return value
         raise serializers.ValidationError("Category does not exist")
+    
+    def create(self, validated_data, owner_id):
+        owner = User.objects.get(id=owner_id)
+        if not owner:
+            raise serializers.ValidationError("User does not exist")
+        expense = Expense.objects.create(owner=owner, **validated_data)
+        return expense
+    
