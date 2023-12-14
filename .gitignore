@@ -1,0 +1,10 @@
+expenses-p-env
+expenses_manager/.env
+
+**/__pycache__/
+**/*.pyc
+
+**/migrations/
+.vscode/
+*.log
+*.db

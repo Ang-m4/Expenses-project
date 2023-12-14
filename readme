@@ -1,0 +1,26 @@
+# FILEPATH
+
+"""
+This code represents a front-back application using Vue.js and Django.
+
+Description:
+This application is built using the Vue.js framework for the front-end and Django for the back-end. It allows users to interact with a web interface powered by Vue.js, while the server-side logic and data management are handled by Django.
+
+Usage:
+To run this application, make sure you have both Vue.js and Django installed. Then, follow these steps:
+1. Set up the Django project and configure the necessary database settings.
+2. Start the Django server.
+3. Navigate to the front-end directory and install the required dependencies using npm or yarn.
+4. Start the Vue.js development server.
+5. Access the application in your web browser.
+
+Dependencies:
+- Vue.js: version X.X.X
+- Django: version X.X.X
+
+Contributing:
+If you would like to contribute to this project, please follow the guidelines outlined in CONTRIBUTING.md.
+
+License:
+This project is licensed under the MIT License. See LICENSE.md for more information.
+"""
